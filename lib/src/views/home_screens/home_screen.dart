@@ -65,8 +65,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     // Extraemos los datos relevantes de cada alimento
                     final title =
                         topFoods[index]['title'] ?? 'Título no disponible';
-                    final description = topFoods[index]['description'] ??
-                        'Descripción no disponible';
+                    // final description = topFoods[index]['description'] ??
+                    //     'Descripción no disponible';
                     final price = topFoods[index]['price']?.toString() ??
                         'Precio no disponible';
                     final imageUrl = topFoods[index]['image'] ??
@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           subtitle: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(description),
+                              // Text(description),
                               const SizedBox(height: 5),
                               Text('$price MXN',
                                   style: const TextStyle(

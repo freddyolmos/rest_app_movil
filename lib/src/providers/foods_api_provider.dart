@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class FoodsApiProvider {
-  final String apiUrl = 'http://192.168.111.123:8000/api/foods/';
+  final String apiUrl = 'http://192.168.1.18:8000/api/foods/';
 
   Future<List<dynamic>> fetchFoods() async {
     try {
@@ -22,7 +22,7 @@ class FoodsApiProvider {
 }
 
 class TopSellingFoodsApiProvider {
-  final String apiUrl = 'http://192.168.111.123:8000/api/top-selling-foods/';
+  final String apiUrl = 'http://192.168.1.18:8000/api/top-selling-foods/';
 
   Future<List<dynamic>> fetchTopSellingFoods() async {
     try {
